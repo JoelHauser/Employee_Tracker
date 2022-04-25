@@ -269,3 +269,54 @@ function employeeArray() {
     roleArray(employeeChoices);
   });
 }
+
+function roleArray(employeeChoices) {
+  console.log("updating role");
+
+  var query = `SELECT r.id, r.title, r.salary FROM role r`;
+  let roleChoices;
+
+  connection.query(query, function (err, res) {
+    if (err) throw err;
+
+    roleChoices = res.map(({ id, title, salary }) => ({
+      value: id,
+      title: `${title} ${salary}`,
+    }));
+    console.table(res);
+    console.log("Array updated\n");
+
+    promptEmployeeRole(employeeChoices, roleChoices);
+  });
+}
+
+function promptEmployeeRole(employeeChoices, roleChoices) {
+  inquirer
+    .prompt([
+      {
+        type: "list",
+        name: "employeeId",
+        message: "Which role does this employee take?",
+        choices: employeeChoices,
+      },
+      {
+        type: "list",
+        name: "roleId",
+        message: "Which role needs to be updated?",
+        choice: roleChoices,
+      },
+    ])
+    .then(function (answer) {
+      var query = `UPDATE employee SET role_id = ? WHERE id = ?`;
+      connection.query(
+        query,
+        [answer.roleId, answer.employeeId],
+        function (err, res) {
+          if (err) throw err;
+          console.table(res);
+          console.log(res.affectedRows + "successfully updated");
+          firstConnect();
+        }
+      );
+    });
+}
