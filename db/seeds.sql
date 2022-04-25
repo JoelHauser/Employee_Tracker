@@ -32,17 +32,17 @@ VALUES
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Lead Legal Advisor", 180000, 1);
+  ("Lead Legal Advisor", 180000, 2);
 
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Head Software Engineer", 160000, 1);
+  ("Head Software Engineer", 160000, 2);
 
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Head Accountant", 120000, 1);
+  ("Head Accountant", 120000, 3);
 
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
