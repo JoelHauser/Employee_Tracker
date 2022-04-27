@@ -96,13 +96,13 @@ function searchEmployeesByDepartment() {
   connection.query(query, function (err, res) {
     if (err) throw err;
 
-    const departmentChoices = res.map((data) => ({
+    const departmentChoices = res.map(data => ({
       value: data.id,
       name: data.name,
     }));
 
     console.table(res);
-    console.log("Now viewing department\n");
+    console.log("Now viewing department");
 
     promptDepartment(departmentChoices);
   });
