@@ -31,7 +31,7 @@ function firstConnect() {
         "Remove Employee",
         "Update Employee",
         "Add Role",
-        "Close"
+        "Close",
       ],
     })
     .then(function ({ task }) {
@@ -96,7 +96,7 @@ function searchEmployeesByDepartment() {
   connection.query(query, function (err, res) {
     if (err) throw err;
 
-    const departmentChoices = res.map(data => ({
+    const departmentChoices = res.map((data) => ({
       value: data.id,
       name: data.name,
     }));

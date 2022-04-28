@@ -1,5 +1,4 @@
 USE employeesdb;
-
 INSERT INTO
   department (name)
 VALUES
@@ -23,19 +22,19 @@ VALUES
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Head Engineer", 130000, 1);
+  ("Head Engineer", 130000, 2);
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Lead Legal Advisor", 180000, 2);
+  ("Lead Legal Advisor", 180000, 3);
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Head Software Engineer", 160000, 2);
+  ("Software Engineer", 160000, 2);
 INSERT INTO
   role (title, salary, department_id)
 VALUES
-  ("Head Accountant", 120000, 3);
+  ("Head Accountant", 120000, 5);
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
@@ -51,11 +50,11 @@ VALUES
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
-  ("Ronny", "Johnny", 1, NULL);
+  ("Ronny", "Johnny", 4, NULL);
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
-  ("Sammy", "Blammy", 4, 1);
+  ("Sammy", "Blammy", 5, 1);
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
@@ -63,7 +62,7 @@ VALUES
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
-  ("Can", "Blu", 5, NULL);
+  ("Can", "Blu", 4, 7);
 INSERT INTO
   employee (first_name, last_name, role_id, manager_id)
 VALUES
