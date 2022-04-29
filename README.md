@@ -24,12 +24,6 @@
 
   This application is designed for admins in this company!
 
-  ## Contribution
-
-  
-    There are no extra contributers to list.
-    
-
   ## Questions
 
   Any questions can be directed at the primary author via: <br>
