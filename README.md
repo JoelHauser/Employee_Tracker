@@ -19,8 +19,6 @@
   ## Demo
   ![Link to full demo](https://github.com/JoelHauser/OfficalEmployeeTracker/blob/main/demo/Untitled_%20Apr%2030%2C%202022%202_32%20PM.gif)
 
-  ## Link to Full demo
-  [![GoogleDrive](https://drive.google.com/file/d/1CHMu8teCZqfoEgtkg7OBDn_YAbTmxCt9/view)
   
   ## Installation
   
