@@ -15,6 +15,9 @@
   ## Discription
 
   This repository allows an admin to see which employees works in a specific; department, display their id, salary, and whom their manager is.
+
+  ## Demo
+  ![Link to full demo](https://drive.google.com/file/d/1CHMu8teCZqfoEgtkg7OBDn_YAbTmxCt9/view)
   
   ## Installation
   
